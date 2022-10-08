@@ -78,44 +78,39 @@ select {
 }
 
 body {
-    background-color: hsl(212, 45%, 89%);
-    display: flex;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: hsl(212, 45%, 89%);
 }
 
 .content-wrapper {
   background-color: #ffff;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  width: auto;
   border-radius: 20px;
+  max-width: 320px;
+  padding: 16px;
 }
 
-.content-img img {
-  margin: 16px 16px 24px 16px;  
+.card-img img {
+  width: 100%;
   border-radius: 10px;
-  width: 288px;
-  height: 288px;
 }
 
-.content-description {
-  max-width: 288px;
+.card-description {
   margin: 16px 16px 24px 16px;
   text-align: center;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
-.content-description h1 {
-  color:  hsl(218, 44%, 22%);
+.card-description h1 {
+  color: hsl(218, 44%, 22%);
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 16px;
 }
 
-.content-description p {
-  color:  hsl(220, 15%, 55%);
+.card-description p {
+  color: hsl(220, 15%, 55%);
   font-weight: 400;
   font-size: 15px;
-  /* margin-bottom: 16px; */
 }
